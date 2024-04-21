@@ -1,6 +1,7 @@
 /* Start Variables */
 :root{
-    --main-color:#19c8fa
+    --main-color:#19c8fa;
+    --transparent-color:#0f748fb3;
 }
 /* End Variables */
 
@@ -138,3 +139,92 @@ header .form i{
     right: 0;
 }
 /* End Header */
+/* ================================================= */
+/* Start Landing Section */
+.landing{
+    min-height: 100vh;
+    background-image: url(/imgs/landing.jpg);
+    background-color: #1f2021; /* in case the image has a problem */
+    background-size: cover;
+    position: relative;
+}
+.landing .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.landing .text{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50px);
+    width: 50%;
+    padding: 50px;
+    background-color: var(--transparent-color);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.landing .text .content{
+    max-width: 500px;
+
+}
+@media (max-width:767px) {
+    .landing .text{
+        width: 100%;
+    }
+    .landing .text .content{
+        max-width: 100%;
+    }
+}
+.landing .text .content h2{
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.landing .text .content p{
+font-size: 14px;
+line-height: 2  ;
+}
+.landing .change-background-icon{
+    position: absolute;
+    top: 50%;
+    color: #DDD;
+    transform: translateY(-50px);
+}
+@media (max-width:767px){
+    .landing .change-background-icon{
+        display: none;
+    }
+}
+.landing .left-icon{
+    left: 30px;
+}
+.landing .right-icon{
+    right: 30px;
+}
+.landing .bullets{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+
+}
+.landing .bullets li{
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.landing .bullets .active{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+/* End Landing Section */
