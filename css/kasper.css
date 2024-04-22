@@ -583,3 +583,122 @@ position: relative;
 }
 /* End Statisics Section */
 /* ================================================= */
+/* Start skills-section */
+.skills-section{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.skills-section .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+    .skills-section .container > div{
+        flex-basis: 45%;
+        
+    }
+}
+.skills-section .container > div > h3{
+    margin: 0 0 30px 0;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skills-section .container > div > p{
+    color: var(--text-color);
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.skills-section .testimonials .card{
+    display: flex;
+    margin-bottom: 30px;
+}
+.skills-section .testimonials img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+@media (max-width: 767px) {
+    .skills-section .testimonials .card{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .skills-section .testimonials img{
+        margin: 0 auto 20px;
+    }
+}
+.skills-section .testimonials .text{
+    border-bottom: 1px solid #CCC;
+    line-height: 1.8;
+}
+.skills-section .testimonials .text p{
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: right;
+    margin-bottom: 5px;
+}
+.skills-section .bullets{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.skills-section .bullets li{
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.skills-section .bullets .active{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.skills-section .our-skills .progress-holder{
+    margin-bottom: 50px;
+
+}
+.skills-section .our-skills .progress-holder h4{
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.skills-section .our-skills .progress-holder .prog{
+    height: 30px;
+    background-color: #dedadc;
+}
+.skills-section .our-skills .progress-holder .prog span{
+    display: block;
+    background-color: var(--main-color);
+    height: 100%;
+    position: relative;
+    
+}
+.skills-section .our-skills .progress-holder .prog span::before{
+    position: absolute;
+    content: attr(data-progress);
+    background-color: black;
+    color: white;
+    top: -40px;
+    right: -18px;
+    padding: 4px 0 ;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+.skills-section .our-skills .progress-holder .prog span::after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent transparent;
+    right: -6px;
+    top: -14px;
+}
+/* End skills-section */
+/* ================================================= */
