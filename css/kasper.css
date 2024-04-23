@@ -367,7 +367,7 @@ margin-bottom: 40px;
     padding: 15px 0;
 }
 .design .text li::before{
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 5 Free'; /* Put icon in the before */
     content: '\f108';
     font-weight: 900;
     margin-right: 20px;
@@ -701,4 +701,51 @@ position: relative;
     top: -14px;
 }
 /* End skills-section */
+/* ================================================= */
+/* Start Quote Section */
+.quote{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url("/imgs/quote.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+.quote::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.quote .container{
+    position: relative;
+}
+.quote q{
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;
+}
+.quote q::before{
+    font-family: 'Font Awesome 5 Free'; /* Put icon in the before */
+    content: '\f10d';
+    font-weight: 900;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+.quote q::after{
+    font-family: 'Font Awesome 5 Free'; /* Put icon in the before */
+    content: '\f10e';
+    font-weight: 900;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+/* End Quote Section */
 /* ================================================= */
