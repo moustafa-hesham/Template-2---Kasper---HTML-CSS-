@@ -749,3 +749,96 @@ position: relative;
 }
 /* End Quote Section */
 /* ================================================= */
+/* Start Pricing Sectoion */
+.pricing{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.pricing .plans-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 30px;
+}
+.pricing .plans-content .plans-item{
+    background-color: #FCFCFC;
+    text-align: center;
+}
+.pricing .plans-content .plans-item .head{
+    padding: 40px 20px;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans-content .plans-item .head span{
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.pricing .plans-content .plans-item .head .number{
+    font-size: 60px;
+    font-weight: 500;
+}
+.pricing .plans-content .plans-item .head .number::before{
+    content: "$";
+    position: relative;
+    font-size: 25px;
+    font-weight: normal;
+    top: -40px;
+    margin-right: 15px;
+}
+.pricing .plans-content .plans-item .head .number::after{
+    content: "/Mo";
+    position: relative;
+    font-size: 25px;
+    font-weight: normal;
+    margin-right: 15px;
+    right: -15px;
+}
+.pricing .plans-content .plans-item ul{
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans-content .plans-item ul li{
+    padding: 20px;
+    position: relative;
+    }
+.pricing .plans-content .plans-item ul li:not(:last-child)::after{
+    content: "";
+    width: 140px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.pricing .plans-content .plans-item .foot a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    margin: 30px auto;
+    border-radius: 4px;
+}
+.pricing .contact-text{
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 20px;
+}
+.pricing .contact-link{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    margin: 30px auto;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    transform: .3s;
+}
+.pricing .contact-link:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+}
+/* End Pricing Sectoion */
+/* ================================================= */
