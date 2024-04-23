@@ -899,6 +899,7 @@ position: relative;
     border: 1px solid white;
     border-left: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .subscribe form input[type="submit"]:focus, .subscribe form input[type="email"]:focus{
     outline:none ;
@@ -916,4 +917,90 @@ position: relative;
     }
 }
 /* End Subscrib Section */
+/* ================================================= */
+/* Start Contact Us Section  */
+.contact-us{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact-us .content{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:767px) {
+    .contact-us .content{
+        flex-direction: column;
+        }
+}
+.contact-us .content form{
+flex-basis: 70%;
+}
+.contact-us .content form .main-input{
+padding: 20px;
+display: block;
+border: 1px solid #ccc;
+margin-bottom: 30px;
+width: 100%;
+}
+.contact-us .content form .main-input:focus{
+    outline: none;
+}
+.contact-us .content form textarea.main-input{
+    height: 200px;
+}
+.contact-us .content form input[type="submit"]{
+background-color: var(--main-color);
+color: white;
+border: none;
+padding: 20px;
+border-radius: 2px;
+display: flex;
+margin-left: auto;
+font-weight: normal;
+font-size: 12px;
+text-transform: uppercase;
+cursor: pointer;
+}
+.contact-us .content .info{
+    flex-basis: 25%;
+}
+@media (max-width:767px) {
+    .contact-us .content .info{
+order: -1;
+text-align: center;        
+display: flex;
+justify-content: space-around;
+}
+}
+.contact-us .content .info h4{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.contact-us .content .info .phone{
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+.contact-us .content .info h4:last-of-type{
+    margin-top: 90px;
+}
+@media (max-width:767px) {
+    .contact-us .content .info h4:last-of-type{
+        margin-top: 0px
+}
+}
+.contact-us .content .info address{
+    color: var(--text-color);
+    line-height: 2;
+}
+@media (max-width:767px) {
+    .contact-us .content .info address{
+        margin-bottom: 30px;
+}
+}
+
+/* End Contact Us Section  */
 /* ================================================= */
