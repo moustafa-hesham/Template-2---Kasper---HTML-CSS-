@@ -216,7 +216,7 @@ header .form i {
 /* Start Landing Section */
 .landing {
     min-height: 100vh;
-    background-image: url('imgs/landing.jpg');
+    background-image: url('../imgs/landing.jpg');
     background-color: #1f2021;
     /* in case the image has a problem */
     background-size: cover;
@@ -370,7 +370,7 @@ header .form i {
 .design {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    background-image: url('imgs/design-features.jpg');
+    background-image: url('../imgs/design-features.jpg');
     background-size: cover;
     height: 600px;
     background-color: #1f2021;
@@ -612,7 +612,7 @@ header .form i {
 .stat-section {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    background-image: url('imgs/image.png');
+    background-image: url('../imgs/image.png');
     text-align: center;
     background-size: cover;
     position: relative;
@@ -825,7 +825,7 @@ header .form i {
 .quote {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    background-image: url('imgs/quote.jpg');
+    background-image: url('../imgs/quote.jpg');
     background-size: cover;
     position: relative;
     text-align: center;
@@ -988,7 +988,7 @@ header .form i {
 .subscribe {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    background-image: url('imgs/subscribe.jpg');
+    background-image: url('../imgs/subscribe.jpg');
     background-size: cover;
     position: relative;
     color: white;
@@ -1178,7 +1178,7 @@ header .form i {
 .footer {
     padding-top: calc(var(--section-padding) / 2);
     padding-bottom: calc(var(--section-padding) / 2);
-    background-image: url('imgs/subscribe.jpg');
+    background-image: url('../imgs/subscribe.jpg');
     background-size: cover;
     position: relative;
     color: white;
